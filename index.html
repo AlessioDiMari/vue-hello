@@ -16,7 +16,7 @@
             <p>
                 {{paragrafo}}
             </p>
-
+            <img :src="immagine" alt="">
     </div>
     
 
@@ -30,8 +30,8 @@
                 return{
                     // qui è vome metteremo tutti i dati che inseriremo in pagina
                     saluto: "Benvenuti nella mia prima prova di VueJs",
-                    paragrafo: "Auguratemi di non tirare giù troppi santi ..."
-
+                    paragrafo: "Auguratemi di non tirare giù troppi santi ...",
+                    immagine: "https://static5.depositphotos.com/1005040/501/i/950/depositphotos_5013014-stock-photo-cute-man-praying-with-puppy.jpg",
                 }
             }
         }).mount("#app");
