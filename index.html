@@ -9,28 +9,32 @@
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app">
+        
+            <h1>
+                {{saluto}}
+            </h1>
+            <p>
+                {{paragrafo}}
+            </p>
 
     </div>
     
 
     <!-- script dove utilizziamo yuejs -->
     <script>
-        const {createapp} = Vue;
+        const {createApp} = Vue;
 
-        createapp({
-
-            data(){
+        createApp({
+            data() {
 
                 return{
                     // qui è vome metteremo tutti i dati che inseriremo in pagina
-                    
+                    saluto: "Benvenuti nella mia prima prova di VueJs",
+                    paragrafo: "Auguratemi di non tirare giù troppi santi ..."
 
                 }
-
             }
-
         }).mount("#app");
-
     </script>
 </body>
 </html>
